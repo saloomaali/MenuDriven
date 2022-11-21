@@ -14,6 +14,14 @@ public class Main {
              switch (n) {
 
                  case 1 :
+                     System.out.println("Enter three numbers");
+                     Scanner obj1 = new Scanner(System.in);
+                     int num1 = obj1.nextInt();
+                     int num2 = obj1.nextInt();
+                     int num3 = obj1.nextInt();
+                     int greatest = (num1 > num2 )? (num1 > num3 ? num1 : num3) : (num2 > num3 ? num2 : num3);
+                     System.out.println("Greatest of the given three numbers is " + greatest);
+             }
 
              }
          }
