@@ -13,8 +13,8 @@ public class Main {
          else{
              switch (n) {
 
+                 case 1 :
 
-             }
              }
          }
     }
