@@ -5,7 +5,7 @@ public class Main {
         Scanner input = new Scanner(System.in);
 
         System.out.println("Select the option \n 1 - Greatest of three numbers \n 2- Smallest of three numbers \n 3 - Is the given number is prime or not \n " +
-                "4 - Is the given number is odd or even \n 5 - Revers the given number \n 6 - Exit");
+                "4 - Is the given number is even or not \n 5 - Revers the given number \n 6 - Exit");
          int n = input.nextInt();
          if (n == 6){
              System.out.println("You are exiting from the program");
@@ -50,6 +50,17 @@ public class Main {
                      }
                      else {
                          System.out.println("The given number is prime");
+                     }
+                     break;
+
+                 case 4 :
+                     Scanner obj4 = new Scanner(System.in);
+                     int y = obj4.nextInt();
+                     if (y % 2 == 0) {
+                         System.out.println("Given number is even");
+                     }
+                     else {
+                         System.out.println("The given is not even");
                      }
                      break;
 
