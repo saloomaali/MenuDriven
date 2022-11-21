@@ -35,6 +35,7 @@ public class Main {
 
                  case 3 :
                      int f = 0;
+                     System.out.println("Enter a number other than '0' and '1'");
                      Scanner obj3 = new Scanner(System.in);
                      int x = obj3.nextInt();
                      for (int i = 2 ; i < x ; i++){
@@ -54,6 +55,7 @@ public class Main {
                      break;
 
                  case 4 :
+                     System.out.println("Enter a number");
                      Scanner obj4 = new Scanner(System.in);
                      int y = obj4.nextInt();
                      if (y % 2 == 0) {
@@ -64,9 +66,26 @@ public class Main {
                      }
                      break;
 
+
+                 case 5 :
+                     System.out.println("Enter a number");
+                     Scanner obj5 = new Scanner(System.in);
+                     int z = obj5.nextInt();
+                     int temp = 0;
+                     while(z != 0) {
+
+                         temp =  temp * 10 + z % 10;
+                         z = z /10;
+
+                     }
+                     System.out.println("Reverse of the given number is " + temp);
+                     break;
+
+                 default:
+                     System.out.println("Choose a valid option");
+
              }
 
              }
          }
     }
-}
