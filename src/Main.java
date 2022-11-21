@@ -21,6 +21,7 @@ public class Main {
                      int num3 = obj1.nextInt();
                      int greatest = (num1 > num2 )? (num1 > num3 ? num1 : num3) : (num2 > num3 ? num2 : num3);
                      System.out.println("Greatest of the given three numbers is " + greatest);
+                     break;
 
                  case 2 :
                      System.out.println("Enter three numbers");
@@ -30,6 +31,28 @@ public class Main {
                      int n3 = obj2.nextInt();
                      int smallest = (n1 < n2 )? (n1 < n3 ? n1 : n3) : (n2 < n3 ? n2 : n3);
                      System.out.println("Greatest of the given three numbers is " + smallest);
+                     break;
+
+                 case 3 :
+                     int f = 0;
+                     Scanner obj3 = new Scanner(System.in);
+                     int x = obj3.nextInt();
+                     for (int i = 2 ; i < x ; i++){
+
+                         if (x % i == 0){
+
+                             f = 1;
+                             break;
+                         }
+                     }
+                     if (f == 1){
+                         System.out.println("The given number is not prime");
+                     }
+                     else {
+                         System.out.println("The given number is prime");
+                     }
+                     break;
+
              }
 
              }
