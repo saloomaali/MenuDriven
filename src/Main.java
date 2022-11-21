@@ -21,6 +21,15 @@ public class Main {
                      int num3 = obj1.nextInt();
                      int greatest = (num1 > num2 )? (num1 > num3 ? num1 : num3) : (num2 > num3 ? num2 : num3);
                      System.out.println("Greatest of the given three numbers is " + greatest);
+
+                 case 2 :
+                     System.out.println("Enter three numbers");
+                     Scanner obj2 = new Scanner(System.in);
+                     int n1 = obj2.nextInt();
+                     int n2 = obj2.nextInt();
+                     int n3 = obj2.nextInt();
+                     int smallest = (n1 < n2 )? (n1 < n3 ? n1 : n3) : (n2 < n3 ? n2 : n3);
+                     System.out.println("Greatest of the given three numbers is " + smallest);
              }
 
              }
